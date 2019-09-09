@@ -6,10 +6,13 @@ int main()
 {
     double a,b,c,ac,bc,p;
     cin>>a>>b>>c;
+    if ((c<=a)||(c>=b))
+    cout<<"Ошибка";
+    else {
     ac=c-a;
     bc=b-c;
     p=ac*bc;
     cout<<p;
-
+}
     return 0;
 }
